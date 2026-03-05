@@ -1,0 +1,69 @@
+{
+  "id": "elegant_left",
+  "name": "Elegant Left",
+  "description": "Elegant typography on left",
+  "preview": "previews/elegant_left.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#f5f7fa", "#c3cfe2"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Elegance",
+      "content": "Simple & Sophisticated",
+      "x": 0.08,
+      "y": 0.18,
+      "maxWidth": 0.5,
+      "style": {
+        "fontSize": 95,
+        "fontWeight": 300,
+        "fontFamily": "Inter",
+        "lineHeight": 1.15,
+        "color": "#2c3e50",
+        "textAlign": "left"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Beauty in simplicity",
+      "x": 0.08,
+      "y": 0.40,
+      "maxWidth": 0.4,
+      "style": {
+        "fontSize": 40,
+        "fontWeight": 300,
+        "fontFamily": "Inter",
+        "lineHeight": 1.5,
+        "color": "#34495e",
+        "textAlign": "left",
+        "opacity": 0.8
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.72,
+      "y": 0.55,
+      "scale": 0.9,
+      "shadow": {
+        "enabled": true,
+        "blur": 55,
+        "offsetY": 28,
+        "opacity": 0.3
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Elegance",
+    "subtitle": "Simple & Sophisticated"
+  }
+}

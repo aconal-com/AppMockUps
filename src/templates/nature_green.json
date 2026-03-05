@@ -1,0 +1,69 @@
+{
+  "id": "nature_green",
+  "name": "Nature Green",
+  "description": "Natural green gradient",
+  "preview": "previews/nature_green.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#134e5e", "#71b280"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Natural",
+      "content": "Fresh & Organic",
+      "x": 0.5,
+      "y": 0.16,
+      "maxWidth": 0.85,
+      "style": {
+        "fontSize": 100,
+        "fontWeight": 600,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Inspired by nature",
+      "x": 0.5,
+      "y": 0.30,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 40,
+        "fontWeight": 400,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.62,
+      "scale": 0.9,
+      "shadow": {
+        "enabled": true,
+        "blur": 65,
+        "offsetY": 32,
+        "opacity": 0.35
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Natural",
+    "subtitle": "Fresh & Organic"
+  }
+}

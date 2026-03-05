@@ -1,0 +1,67 @@
+{
+  "id": "clean_white",
+  "name": "Clean White",
+  "description": "Clean white background",
+  "preview": "previews/clean_white.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "solid",
+    "color": "#ffffff"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Clean",
+      "content": "Pure & Simple",
+      "x": 0.5,
+      "y": 0.18,
+      "maxWidth": 0.85,
+      "style": {
+        "fontSize": 100,
+        "fontWeight": 600,
+        "fontFamily": "Inter",
+        "lineHeight": 1.1,
+        "color": "#1a1a1a",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Less is more",
+      "x": 0.5,
+      "y": 0.32,
+      "maxWidth": 0.6,
+      "style": {
+        "fontSize": 38,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "lineHeight": 1.4,
+        "color": "#666666",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.5,
+      "y": 0.62,
+      "scale": 0.88,
+      "shadow": {
+        "enabled": true,
+        "blur": 45,
+        "offsetY": 22,
+        "opacity": 0.2
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Clean",
+    "subtitle": "Pure & Simple"
+  }
+}

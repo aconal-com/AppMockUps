@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { useStore } from './store/useStore';
 import TemplateSelector from './ui/components/TemplateSelector';
 import EditorCanvas from './ui/components/EditorCanvas';
@@ -10,33 +9,13 @@ import BackgroundPanel from './ui/components/BackgroundPanel';
 import TypographyPanel from './ui/components/TypographyPanel';
 import ScreenshotUploader from './ui/components/ScreenshotUploader';
 import ProjectManager from './ui/components/ProjectManager';
+import ClipboardActions from './ui/components/ClipboardActions';
+import HistoryActions from './ui/components/HistoryActions';
 
 export default function App() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const setCanvas = useStore((state) => state.setCanvas);
   const selectedTemplate = useStore((state) => state.selectedTemplate);
   const setSelectedTemplate = useStore((state) => state.setSelectedTemplate);
   const showLayerPanel = useStore((state) => state.showLayerPanel);
-
-  useEffect(() => {
-    // Initialize Fabric.js canvas when component mounts
-    import('fabric').then((fabricModule) => {
-      const fabric = fabricModule.fabric;
-      if (canvasRef.current) {
-        const canvas = new fabric.Canvas(canvasRef.current, {
-          width: 430, // Display width (scaled down)
-          height: 932,
-          preserveObjectStacking: true,
-          selection: true,
-        });
-        setCanvas(canvas);
-
-        return () => {
-          canvas.dispose();
-        };
-      }
-    });
-  }, [setCanvas]);
 
   return (
     <div className="h-screen flex flex-col bg-gray-100">
@@ -61,6 +40,10 @@ export default function App() {
 
             <DeviceSelector />
 
+            <ClipboardActions />
+
+            <HistoryActions />
+
             <ProjectManager />
           </div>
         </aside>
@@ -68,7 +51,7 @@ export default function App() {
         {/* Center - Canvas */}
         <main className="flex-1 flex items-center justify-center bg-gray-50 overflow-auto p-8">
           <div className="shadow-2xl">
-            <canvas ref={canvasRef} />
+            <EditorCanvas />
           </div>
         </main>
 

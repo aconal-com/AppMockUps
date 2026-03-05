@@ -1,0 +1,69 @@
+{
+  "id": "gradient_overlay",
+  "name": "Gradient Overlay",
+  "description": "Gradient overlay on device",
+  "preview": "previews/gradient_overlay.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#4facfe", "#00f2fe"],
+    "direction": "bottom-right"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Beautiful",
+      "content": "Stunning gradients",
+      "x": 0.5,
+      "y": 0.15,
+      "maxWidth": 0.9,
+      "style": {
+        "fontSize": 95,
+        "fontWeight": 700,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Eye-catching design",
+      "x": 0.5,
+      "y": 0.28,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 42,
+        "fontWeight": 400,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.60,
+      "scale": 0.92,
+      "shadow": {
+        "enabled": true,
+        "blur": 70,
+        "offsetY": 35,
+        "opacity": 0.4
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Beautiful",
+    "subtitle": "Stunning gradients"
+  }
+}

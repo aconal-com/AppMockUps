@@ -1,0 +1,68 @@
+{
+  "id": "color_pop",
+  "name": "Color Pop",
+  "description": "Vibrant gradient background",
+  "preview": "previews/color_pop.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#f093fb", "#f5576c"],
+    "direction": "bottom-right"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Vibrant",
+      "x": 0.5,
+      "y": 0.15,
+      "maxWidth": 0.85,
+      "style": {
+        "fontSize": 105,
+        "fontWeight": 700,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Stand out from the crowd",
+      "x": 0.5,
+      "y": 0.28,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 40,
+        "fontWeight": 500,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.95
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.63,
+      "scale": 0.85,
+      "shadow": {
+        "enabled": true,
+        "blur": 65,
+        "offsetY": 32,
+        "opacity": 0.35
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Vibrant",
+    "subtitle": "Stand out from the crowd"
+  }
+}

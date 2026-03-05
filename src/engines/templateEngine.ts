@@ -4,6 +4,14 @@ import leftTextTemplate from '../templates/left_text.json';
 import floatingDeviceTemplate from '../templates/floating_device.json';
 import panoramicTemplate from '../templates/panoramic.json';
 import minimalCenterTemplate from '../templates/minimal_center.json';
+import splitScreenTemplate from '../templates/split_screen.json';
+import boldCenterTemplate from '../templates/bold_center.json';
+import elegantLeftTemplate from '../templates/elegant_left.json';
+import colorPopTemplate from '../templates/color_pop.json';
+import cleanWhiteTemplate from '../templates/clean_white.json';
+import gradientOverlayTemplate from '../templates/gradient_overlay.json';
+import modernDarkTemplate from '../templates/modern_dark.json';
+import natureGreenTemplate from '../templates/nature_green.json';
 
 // Import all templates
 const templates: any = {
@@ -12,6 +20,14 @@ const templates: any = {
   floating_device: floatingDeviceTemplate,
   panoramic: panoramicTemplate,
   minimal_center: minimalCenterTemplate,
+  split_screen: splitScreenTemplate,
+  bold_center: boldCenterTemplate,
+  elegant_left: elegantLeftTemplate,
+  color_pop: colorPopTemplate,
+  clean_white: cleanWhiteTemplate,
+  gradient_overlay: gradientOverlayTemplate,
+  modern_dark: modernDarkTemplate,
+  nature_green: natureGreenTemplate,
 };
 
 class TemplateEngine {

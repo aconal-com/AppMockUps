@@ -1,0 +1,68 @@
+{
+  "id": "bold_center",
+  "name": "Bold Center",
+  "description": "Large bold text centered",
+  "preview": "previews/bold_center.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#000000", "#434343"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "BOLD",
+      "x": 0.5,
+      "y": 0.20,
+      "maxWidth": 0.9,
+      "style": {
+        "fontSize": 120,
+        "fontWeight": 900,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.0,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Make a statement",
+      "x": 0.5,
+      "y": 0.35,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 48,
+        "fontWeight": 400,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.3,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.8
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.68,
+      "scale": 0.9,
+      "shadow": {
+        "enabled": true,
+        "blur": 60,
+        "offsetY": 30,
+        "opacity": 0.4
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "BOLD",
+    "subtitle": "Make a statement"
+  }
+}

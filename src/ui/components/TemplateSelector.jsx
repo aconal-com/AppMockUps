@@ -37,6 +37,48 @@ const templates = [
     description: 'Two devices side by side',
     preview: '📱',
   },
+  {
+    id: 'bold_center',
+    name: 'Bold Center',
+    description: 'Large bold text centered',
+    preview: '📱',
+  },
+  {
+    id: 'elegant_left',
+    name: 'Elegant Left',
+    description: 'Elegant typography on left',
+    preview: '📱',
+  },
+  {
+    id: 'color_pop',
+    name: 'Color Pop',
+    description: 'Vibrant gradient background',
+    preview: '📱',
+  },
+  {
+    id: 'clean_white',
+    name: 'Clean White',
+    description: 'Clean white background',
+    preview: '📱',
+  },
+  {
+    id: 'gradient_overlay',
+    name: 'Gradient Overlay',
+    description: 'Gradient overlay on device',
+    preview: '📱',
+  },
+  {
+    id: 'modern_dark',
+    name: 'Modern Dark',
+    description: 'Dark modern aesthetic',
+    preview: '📱',
+  },
+  {
+    id: 'nature_green',
+    name: 'Nature Green',
+    description: 'Natural green gradient',
+    preview: '📱',
+  },
 ];
 
 export default function TemplateSelector({ selectedTemplate, onSelect }) {

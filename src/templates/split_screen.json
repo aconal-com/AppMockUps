@@ -1,0 +1,83 @@
+{
+  "id": "split_screen",
+  "name": "Split Screen",
+  "description": "Two devices side by side",
+  "preview": "previews/split_screen.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#667eea", "#764ba2"],
+    "direction": "bottom-right"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Two Sides",
+      "content": "Compare and Contrast",
+      "x": 0.5,
+      "y": 0.10,
+      "maxWidth": 0.9,
+      "style": {
+        "fontSize": 85,
+        "fontWeight": 700,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Showcase two screens together",
+      "x": 0.5,
+      "y": 0.22,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 38,
+        "fontWeight": 400,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "device",
+      "id": "device_left",
+      "deviceType": "iphone15pro",
+      "x": 0.3,
+      "y": 0.58,
+      "scale": 0.75,
+      "shadow": {
+        "enabled": true,
+        "blur": 50,
+        "offsetY": 25,
+        "opacity": 0.3
+      }
+    },
+    {
+      "type": "device",
+      "id": "device_right",
+      "deviceType": "iphone15pro",
+      "x": 0.7,
+      "y": 0.58,
+      "scale": 0.75,
+      "shadow": {
+        "enabled": true,
+        "blur": 50,
+        "offsetY": 25,
+        "opacity": 0.3
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Two Sides",
+    "subtitle": "Compare and Contrast"
+  }
+}

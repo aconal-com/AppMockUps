@@ -1,0 +1,69 @@
+{
+  "id": "modern_dark",
+  "name": "Modern Dark",
+  "description": "Dark modern aesthetic",
+  "preview": "previews/modern_dark.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#0f0c29", "#302b63"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Modern",
+      "content": "Dark & Sleek",
+      "x": 0.5,
+      "y": 0.18,
+      "maxWidth": 0.85,
+      "style": {
+        "fontSize": 98,
+        "fontWeight": 700,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Contemporary design",
+      "x": 0.5,
+      "y": 0.32,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 44,
+        "fontWeight": 300,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.4,
+        "color": "#e0e0e0",
+        "textAlign": "center",
+        "opacity": 0.85
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.5,
+      "y": 0.65,
+      "scale": 0.88,
+      "shadow": {
+        "enabled": true,
+        "blur": 60,
+        "offsetY": 30,
+        "opacity": 0.45
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Modern",
+    "subtitle": "Dark & Sleek"
+  }
+}
