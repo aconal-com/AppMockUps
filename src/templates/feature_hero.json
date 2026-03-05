@@ -1,0 +1,68 @@
+{
+  "id": "feature_hero",
+  "name": "Feature Hero",
+  "description": "Centered headline with device at bottom",
+  "preview": "previews/feature_hero.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#A8C0D8", "#6991F0"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Beautiful App Screenshots",
+      "x": 0.1,
+      "y": 0.12,
+      "maxWidth": 0.75,
+      "style": {
+        "fontSize": 110,
+        "fontWeight": 700,
+        "fontFamily": "Inter",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "left"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Generate professional screenshots in minutes",
+      "x": 0.1,
+      "y": 0.30,
+      "maxWidth": 0.6,
+      "style": {
+        "fontSize": 48,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "left",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.5,
+      "y": 0.72,
+      "scale": 0.75,
+      "shadow": {
+        "enabled": true,
+        "blur": 40,
+        "offsetY": 20,
+        "opacity": 0.3
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Your App Name",
+    "subtitle": "Your tagline goes here"
+  }
+}

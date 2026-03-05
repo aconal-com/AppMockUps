@@ -1,0 +1,64 @@
+{
+  "presets": [
+    {
+      "id": "calm-blue",
+      "name": "Calm Blue",
+      "colors": ["#A8C0D8", "#6991F0"],
+      "direction": "bottom"
+    },
+    {
+      "id": "sunset-gradient",
+      "name": "Sunset",
+      "colors": ["#FF7A18", "#AF002D"],
+      "direction": "bottom-right"
+    },
+    {
+      "id": "ocean-breeze",
+      "name": "Ocean Breeze",
+      "colors": ["#36D1DC", "#5B86E5"],
+      "direction": "bottom"
+    },
+    {
+      "id": "purple-dream",
+      "name": "Purple Dream",
+      "colors": ["#667EEA", "#764BA2"],
+      "direction": "bottom-right"
+    },
+    {
+      "id": "mint-fresh",
+      "name": "Mint Fresh",
+      "colors": ["#11998e", "#38ef7d"],
+      "direction": "bottom"
+    },
+    {
+      "id": "warm-coral",
+      "name": "Warm Coral",
+      "colors": ["#FF9A9E", "#FECFEF"],
+      "direction": "bottom"
+    },
+    {
+      "id": "dark-modern",
+      "name": "Dark Modern",
+      "colors": ["#232526", "#414345"],
+      "direction": "bottom"
+    },
+    {
+      "id": "light-gold",
+      "name": "Light Gold",
+      "colors": ["#FDC830", "#F37335"],
+      "direction": "bottom-right"
+    },
+    {
+      "id": "royal-purple",
+      "name": "Royal Purple",
+      "colors": ["#4568DC", "#B06AB3"],
+      "direction": "bottom-right"
+    },
+    {
+      "id": "minimal-gray",
+      "name": "Minimal Gray",
+      "colors": ["#E0EAFC", "#CFDEF3"],
+      "direction": "bottom"
+    }
+  ]
+}

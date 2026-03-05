@@ -1,0 +1,26 @@
+{
+  "id": "iphone15pro",
+  "name": "iPhone 15 Pro",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "screen": {
+    "width": 1179,
+    "height": 2556,
+    "x": 55.5,
+    "y": 118,
+    "cornerRadius": 55
+  },
+  "notch": {
+    "width": 126,
+    "height": 37,
+    "x": 582,
+    "y": 12
+  },
+  "frame": {
+    "path": "frame.png",
+    "mask": "mask.png"
+  },
+  "exportScale": 3
+}
