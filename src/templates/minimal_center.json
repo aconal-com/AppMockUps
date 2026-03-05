@@ -1,0 +1,68 @@
+{
+  "id": "minimal_center",
+  "name": "Minimal Center",
+  "description": "Clean centered layout with minimal text",
+  "preview": "previews/minimal_center.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#FDFBF7", "#F5EFE6"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Simple & Clean",
+      "x": 0.5,
+      "y": 0.15,
+      "maxWidth": 0.8,
+      "style": {
+        "fontSize": 90,
+        "fontWeight": 600,
+        "fontFamily": "Inter",
+        "lineHeight": 1.1,
+        "color": "#1a1a1a",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Minimal design meets powerful features",
+      "x": 0.5,
+      "y": 0.28,
+      "maxWidth": 0.6,
+      "style": {
+        "fontSize": 36,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "lineHeight": 1.4,
+        "color": "#4a4a4a",
+        "textAlign": "center",
+        "opacity": 0.8
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.5,
+      "y": 0.58,
+      "scale": 0.9,
+      "shadow": {
+        "enabled": true,
+        "blur": 40,
+        "offsetY": 20,
+        "opacity": 0.25
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Simple & Clean",
+    "subtitle": "Your tagline"
+  }
+}

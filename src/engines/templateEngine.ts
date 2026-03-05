@@ -3,6 +3,7 @@ import featureHeroTemplate from '../templates/feature_hero.json';
 import leftTextTemplate from '../templates/left_text.json';
 import floatingDeviceTemplate from '../templates/floating_device.json';
 import panoramicTemplate from '../templates/panoramic.json';
+import minimalCenterTemplate from '../templates/minimal_center.json';
 
 // Import all templates
 const templates: any = {
@@ -10,6 +11,7 @@ const templates: any = {
   left_text: leftTextTemplate,
   floating_device: floatingDeviceTemplate,
   panoramic: panoramicTemplate,
+  minimal_center: minimalCenterTemplate,
 };
 
 class TemplateEngine {

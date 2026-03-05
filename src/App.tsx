@@ -8,6 +8,8 @@ import SlideTimeline from './ui/components/SlideTimeline';
 import Header from './ui/components/Header';
 import BackgroundPanel from './ui/components/BackgroundPanel';
 import TypographyPanel from './ui/components/TypographyPanel';
+import ScreenshotUploader from './ui/components/ScreenshotUploader';
+import ProjectManager from './ui/components/ProjectManager';
 
 export default function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -51,11 +53,15 @@ export default function App() {
               onSelect={setSelectedTemplate}
             />
 
+            <ScreenshotUploader />
+
             <BackgroundPanel />
 
             <TypographyPanel />
 
             <DeviceSelector />
+
+            <ProjectManager />
           </div>
         </aside>
 

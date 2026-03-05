@@ -28,7 +28,7 @@ const templates = [
   {
     id: 'minimal_center',
     name: 'Minimal Center',
-    description: 'Clean centered layout',
+    description: 'Clean centered layout with minimal text',
     preview: '📱',
   },
   {
