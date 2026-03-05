@@ -269,10 +269,17 @@ AppMockUps/
 │   │   └── Poppins/
 │   ├── gradients/
 │   │   └── presets.json
+│   ├── store/
+│   │   └── useStore.js  # Zustand state
 │   └── ui/
-│       ├── template-selector.js
-│       ├── editor.js
-│       └── preview.js
+│       ├── components/
+│       │   ├── TemplateSelector.jsx
+│       │   ├── Editor.jsx
+│       │   ├── Preview.jsx
+│       │   ├── LayerPanel.jsx
+│       │   └── SlideTimeline.jsx
+│       └── styles/
+│           └── globals.css
 ├── public/
 │   ├── assets/
 │   └── export/
@@ -284,74 +291,229 @@ AppMockUps/
 
 # 14. Tech Stack
 
-- **Canvas:** Fabric.js (or similar)
-- **Backend:** Node.js (optional for batch processing)
-- **Frontend:** React/Vue (or vanilla JS)
-- **Fonts:** Google Fonts / System fonts
-- **Export:** Canvas to PNG/WebP
+### Canvas Engine
+**fabric.js** - Best for:
+- Transforms
+- Serialization
+- Clip paths
+- Object manipulation
+
+### UI
+- **React** - Component-based UI
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - Beautiful, accessible components
+
+### State Management
+**Zustand** - Lightweight state store
+
+### Export
+**JSZip** - Batch export to ZIP
+
+### Build Tool
+- **Vite** - Fast dev server and build
+- **TypeScript** - Type safety
+
+### Fonts
+- Google Fonts / System fonts
+- Font loaders for Inter, SF Pro, Manrope, Poppins
 
 ---
 
-# 15. Priority Implementation Order
+# 15. Export Engine
+
+### PNG Formats
+Support standard App Store sizes:
+
+- **iPhone 14/15 Pro Max:** 1290 × 2796px
+- **iPhone 14/15 Pro:** 1242 × 2688px
+- **iPhone SE:** 1240 × 2208px
+
+### Batch Export
+- Export all slides as individual PNGs
+- Package into ZIP file for easy download
+- Include naming convention: `screenshot_01.png`, `screenshot_02.png`, etc.
+
+---
+
+# 16. Major Missing Feature (Critical)
+
+To match tools like **app-mockup.com**, you must add:
+
+### Device Screenshot Generator
+
+Pipeline:
+```
+Upload screenshot
+↓
+Insert device
+↓
+Mask screenshot
+↓
+Add title
+↓
+Add background
+↓
+Export
+```
+
+This is the core feature that differentiates professional tools from simple compositors.
+
+---
+
+# 17. UI Layout
+
+The editor layout should be:
+
+### Left Sidebar
+- Template gallery
+- Text controls (font, size, weight, color)
+- Background settings (color, gradient)
+- Device selector
+
+### Center
+- Main canvas (live preview)
+- Zoom controls
+- Grid/toggle guides
+
+### Right Sidebar
+- Layers panel (drag to reorder)
+- Properties panel (selected object settings)
+- History (undo/redo)
+
+### Bottom
+- Slide timeline
+- Add/remove slides
+- Duplicate slide
+- Navigate between slides
+
+---
+
+# 18. Performance Requirements
+
+Editor must support:
+
+### Capacity
+- **10 slides** minimum
+- **40 objects per slide** minimum
+
+### Performance Target
+- **60fps** interactions (drag, resize, pan)
+- <100ms response time for most actions
+- Smooth rendering with high-res screenshots
+
+### Optimization Strategies
+- Use fabric.js object pooling for frequent operations
+- Lazy load device frames
+- Debounce expensive operations
+- Use requestAnimationFrame for smooth updates
+- Virtualize slides list for large projects
+
+---
+
+# 19. Priority Implementation Order
 
 ### Phase 1: Foundation (Week 1)
-- [ ] Set up project structure
-- [ ] Basic canvas engine
+- [ ] Set up React + Vite + TypeScript project
+- [ ] Integrate Fabric.js canvas
+- [ ] Zustand store setup
+- [ ] Basic canvas with object manipulation
 - [ ] Device frame system with masking
 - [ ] 2-3 device frames (iPhone 15 Pro, SE)
 
 ### Phase 2: Templates (Week 2)
-- [ ] Template engine
+- [ ] Template engine (load JSON configs)
 - [ ] 5 core templates
-- [ ] Typography system
-- [ ] Background gradients
+- [ ] Typography system (Inter, SF Pro, Manrope, Poppins)
+- [ ] Background gradients (preset library)
+- [ ] Auto-layout rules (title position, device position)
 
-### Phase 3: UI (Week 3)
-- [ ] Template selector
-- [ ] Live preview
-- [ ] Text editor
+### Phase 3: Core UI (Week 3)
+- [ ] Template selector component
+- [ ] Live preview canvas
+- [ ] Text editor controls
 - [ ] Screenshot uploader
+- [ ] Device selector
+- [ ] Background color/gradient picker
 
-### Phase 4: Advanced (Week 4)
-- [ ] Multi-slide generator
-- [ ] Auto-copy generation
-- [ ] Batch export
+### Phase 4: Advanced UI (Week 4)
+- [ ] Multi-slide timeline
+- [ ] Layers panel
+- [ ] Properties panel
+- [ ] Copy/paste objects
+- [ ] Undo/redo system
+
+### Phase 5: Export & Polish (Week 5)
+- [ ] PNG export at App Store specs
+- [ ] Batch export to ZIP
+- [ ] Save/load project files
+- [ ] Performance optimization
 - [ ] More templates (15+ total)
 
 ---
 
-# 16. Key Features Checklist
+# 20. Key Features Checklist
 
 ### Must Have
 - [ ] Template system with JSON configs
-- [ ] Device frames with masking
+- [ ] Device frames with masking (iPhone 15 Pro, SE)
 - [ ] Screenshot auto-insert & scaling
 - [ ] Typography controls (font, size, weight, color)
 - [ ] Gradient backgrounds
-- [ ] Export as PNG
+- [ ] Export as PNG (1290 × 2796, 1242 × 2688)
+- [ ] Multi-slide support (5-10 slides)
+- [ ] Live preview
 
 ### Should Have
-- [ ] Multi-slide batch generator
-- [ ] Live preview
+- [ ] Batch export to ZIP
 - [ ] Device shadow
 - [ ] Custom templates
 - [ ] Save/load projects
+- [ ] Layers panel
+- [ ] Undo/redo
+- [ ] Copy/paste objects
+- [ ] Keyboard shortcuts
 
 ### Nice to Have
 - [ ] AI copy generation from app description
 - [ ] Device notch cutouts
 - [ ] Landscape mode
-- [ ] Tablet frames
+- [ ] Tablet frames (iPad)
 - [ ] Animated exports
+- [ ] Team collaboration
+- [ ] Version history
 
 ---
 
-# 17. Reference Links
+# 21. Final Product Vision
+
+The workflow should feel like:
+
+```
+Upload screenshots (1-10)
+↓
+Choose template
+↓
+Edit title & text
+↓
+Customize colors & background
+↓
+Preview all slides
+↓
+Export screenshots (PNG or ZIP)
+```
+
+**Time to complete:** Under 5 minutes for a full set of 5 screenshots.
+
+---
+
+# 22. Reference Links
 
 - Original repo: https://github.com/YUZU-Hub/appscreen
-- Studio app-mockup: https://studio.app-mockup.com
+- Inspiration: https://studio.app-mockup.com
 - Fabric.js: https://fabricjs.com/
-- Google Fonts: https://fonts.google.com/
+- Zustand: https://zustand-demo.pmnd.rs/
+- shadcn/ui: https://ui.shadcn.com/
+- JSZip: https://stuk.github.io/jszip/
 
 ---
 
