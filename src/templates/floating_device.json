@@ -1,0 +1,68 @@
+{
+  "id": "floating_device",
+  "name": "Floating Device",
+  "description": "Floating phone with dramatic shadow",
+  "preview": "previews/floating_device.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#FF7A18", "#AF002D"],
+    "direction": "bottom-right"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Feature Highlight",
+      "x": 0.5,
+      "y": 0.15,
+      "maxWidth": 0.85,
+      "style": {
+        "fontSize": 95,
+        "fontWeight": 700,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Showcase your best features with style",
+      "x": 0.5,
+      "y": 0.28,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 40,
+        "fontWeight": 400,
+        "fontFamily": "Poppins",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.65,
+      "scale": 0.8,
+      "shadow": {
+        "enabled": true,
+        "blur": 60,
+        "offsetY": 30,
+        "opacity": 0.4
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Feature Highlight",
+    "subtitle": "Your feature description"
+  }
+}

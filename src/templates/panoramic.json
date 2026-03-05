@@ -1,0 +1,68 @@
+{
+  "id": "panoramic",
+  "name": "Panoramic",
+  "description": "Screenshot spanning full width",
+  "preview": "previews/panoramic.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#232526", "#414345"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Fullscreen Experience",
+      "x": 0.5,
+      "y": 0.10,
+      "maxWidth": 0.9,
+      "style": {
+        "fontSize": 85,
+        "fontWeight": 600,
+        "fontFamily": "Inter",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Immersive screenshots that tell a story",
+      "x": 0.5,
+      "y": 0.22,
+      "maxWidth": 0.7,
+      "style": {
+        "fontSize": 36,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "center",
+        "opacity": 0.85
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15promax",
+      "x": 0.5,
+      "y": 0.60,
+      "scale": 0.95,
+      "shadow": {
+        "enabled": true,
+        "blur": 45,
+        "offsetY": 22,
+        "opacity": 0.3
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Fullscreen Experience",
+    "subtitle": "Your description"
+  }
+}

@@ -16,13 +16,25 @@ const templates = [
   {
     id: 'floating_device',
     name: 'Floating Device',
-    description: 'Floating phone with shadow',
+    description: 'Floating phone with dramatic shadow',
     preview: '📱',
   },
   {
     id: 'panoramic',
     name: 'Panoramic',
-    description: 'Screenshot spanning 3 slides',
+    description: 'Screenshot spanning full width',
+    preview: '📱',
+  },
+  {
+    id: 'minimal_center',
+    name: 'Minimal Center',
+    description: 'Clean centered layout',
+    preview: '📱',
+  },
+  {
+    id: 'split_screen',
+    name: 'Split Screen',
+    description: 'Two devices side by side',
     preview: '📱',
   },
 ];

@@ -1,0 +1,86 @@
+{
+  "id": "left_text",
+  "name": "Left Text Layout",
+  "description": "Title on left, device on right",
+  "preview": "previews/left_text.png",
+  "dimensions": {
+    "width": 1290,
+    "height": 2796
+  },
+  "background": {
+    "type": "gradient",
+    "colors": ["#36D1DC", "#5B86E5"],
+    "direction": "bottom"
+  },
+  "elements": [
+    {
+      "type": "text",
+      "id": "headline",
+      "content": "Your App Name",
+      "x": 0.08,
+      "y": 0.20,
+      "maxWidth": 0.45,
+      "style": {
+        "fontSize": 100,
+        "fontWeight": 700,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.1,
+        "color": "#ffffff",
+        "textAlign": "left"
+      }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "content": "Beautiful screenshots for your app",
+      "x": 0.08,
+      "y": 0.40,
+      "maxWidth": 0.4,
+      "style": {
+        "fontSize": 42,
+        "fontWeight": 400,
+        "fontFamily": "Manrope",
+        "lineHeight": 1.4,
+        "color": "#ffffff",
+        "textAlign": "left",
+        "opacity": 0.9
+      }
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "content": "Generate professional App Store screenshots in minutes. Choose from beautiful templates, customize colors, and export at full resolution.",
+      "x": 0.08,
+      "y": 0.52,
+      "maxWidth": 0.4,
+      "style": {
+        "fontSize": 28,
+        "fontWeight": 400,
+        "fontFamily": "Inter",
+        "lineHeight": 1.5,
+        "color": "#ffffff",
+        "textAlign": "left",
+        "opacity": 0.8
+      }
+    },
+    {
+      "type": "device",
+      "id": "iphone",
+      "deviceType": "iphone15pro",
+      "x": 0.75,
+      "y": 0.55,
+      "scale": 0.85,
+      "shadow": {
+        "enabled": true,
+        "blur": 50,
+        "offsetY": 25,
+        "opacity": 0.35
+      }
+    }
+  ],
+  "placeholders": {
+    "headline": "Your App Name",
+    "subtitle": "Your tagline goes here",
+    "description": "Your app description"
+  }
+}
